@@ -11,18 +11,23 @@ body {
 }
 
 .container {
-  width: 50%;
-  height: 500px;
-  margin: 0 auto;
+  width: 945px;
+  height: auto;
   border-radius: 20px;
   display: flex;
   flex-direction: row;
 }
 
 .car {
-  width: 300px;
-  height: auto;
+  display: flex;
+  flex-direction: column;
   padding: 3em;
+  flex: 1;
+}
+
+.car img {
+  width: 60px;
+  height: auto;
 }
 
 .sedans {
@@ -47,8 +52,10 @@ body {
 
 .sexyp {
   font-family: "Hanken Grotesk", sans-serif;
-  font-size: 1.1em;
+  font-size: 17px;
   color: hsla(0, 0%, 100%, 0.75);
+  line-height: 26px;
+  font-optical-sizing: auto;
   margin-bottom: 100px;
 }
 
@@ -57,6 +64,7 @@ body {
   padding: 12px 40px;
   border-radius: 30px;
   border: 2px solid transparent;
+  margin-top: auto;
 }
 
 .sexybutton-sedans {
@@ -71,30 +79,16 @@ body {
   color: hsl(179, 100%, 13%);
 }
 
-.sexybutton-sedans:hover {
+.sexybutton:hover {
+  background: 0;
   color: white;
-  background-color: hsl(31, 77%, 52%);
   border: 2px solid white;
   cursor: pointer;
 }
 
-.sexybutton-suvs:hover {
-  color: white;
-  background-color: hsl(184, 100%, 22%);
-  border: 2px solid white;
-  cursor: pointer;
-}
-
-.sexybutton-luxury:hover {
-  color: white;
-  background-color: hsl(179, 100%, 13%);
-  border: 2px solid white;
-  cursor: pointer;
-}
-
-@media (max-width: 375px) {
+@media (max-width: 941px) {
   .container {
-    width: 80%;
+    width: 315px;
     flex-direction: column;
     margin: 1rem auto;
   }
